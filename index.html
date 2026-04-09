@@ -707,17 +707,17 @@ function genReport(){
   let txt=`📿 تقرير قضاء الصلوات\n`;
   txt+=`👤 ${S.name||'—'}\n`;
   txt+=`📅 الفترة: ${period}\n`;
-  txt+=`${'─'.repeat(28)}\n`;
+  txt+=`${'─'.repeat(18)}\n`;
   txt+=`🕌 إجمالي الصلوات المقضية: ${totalSalawat}\n`;
   txt+=`🔢 إجمالي الركعات: ${totalRakaat}\n`;
   txt+=`📊 عدد الجلسات: ${sessions}\n`;
   txt+=`📈 معدل الجلسة: ${avgSalawat} صلاة / ${avgRakaat} ركعة\n`;
-  txt+=`${'─'.repeat(28)}\n`;
+  txt+=`${'─'.repeat(18)}\n`;
   txt+=`تفصيل:\n`;
   Object.keys(byPrayer).forEach(k=>{
     if(byPrayer[k]>0) txt+=`  ${NM[k]}: ${byPrayer[k]} صلاة\n`;
   });
-  txt+=`${'─'.repeat(28)}\n`;
+  txt+=`${'─'.repeat(18)}\n`;
   txt+=`✅ نسبة الإنجاز الكلية: ${pct}%\n`;
   txt+=`⏳ المتبقي: ${rem} صلاة\n`;
   txt+=`\n🤍 وفّقك الله`;
